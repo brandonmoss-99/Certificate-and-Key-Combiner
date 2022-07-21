@@ -18,6 +18,7 @@ runModule() {
 # Get passed in args
 # -c for cert file
 # -k for key file
+# -s for service to reload
 while getopts c:k:s: arg; do
     case "${arg}" in
         c)cert=${OPTARG};;
